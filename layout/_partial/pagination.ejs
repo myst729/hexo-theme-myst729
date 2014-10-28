@@ -1,0 +1,13 @@
+<nav id="pagination">
+  <% if (page.prev) { %>
+    <a class="prev" href="<%- config.root %><%- page.prev_link %>"><i class="fontello icon-prev"></i>Prev</a>
+  <% } else { %>
+    <span class="prev"><i class="fontello icon-prev"></i>Prev</span>
+  <% } %>
+  <span class="sep"> | </span>
+  <% if (page.next) { %>
+    <a class="next" href="<%- config.root %><%- page.next_link %>">Next<i class="fontello icon-next"></i></a>
+  <% } else { %>
+    <span class="next">Next<i class="fontello icon-next"></i></span>
+  <% } %>
+</nav>

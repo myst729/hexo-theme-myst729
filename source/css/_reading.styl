@@ -1,0 +1,276 @@
+article
+  font-size 20px
+  line-height 1.6
+  margin 20px 50px
+
+  p.eof
+    text-align center
+    font-size 24px
+    color rgba(color-lightgray, .5)
+
+    .fontello
+      vertical-align middle
+      margin 0 5px
+
+    &:before
+    &:after
+      content ''
+      border 1px solid rgba(color-lightgray, .5)
+      width 50px
+      height 0
+      display inline-block
+      vertical-align middle
+
+  a {
+    background: transparent;
+    color: #4183c4;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: underline;
+  }
+
+  a:active,
+  a:hover {
+    outline: 0;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+
+  img {
+    max-width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px;
+    background: rgba(color-light, .4);;
+    border: 1px solid rgba(color-lightgray, .4);
+    border-radius: 6px;
+    transition box-shadow 400ms ease-in-out
+  }
+
+  img:hover {
+    box-shadow 0 0 7px rgba(color-lightgray, .7)
+  }
+
+  hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  hr:before,
+  hr:after {
+    display: table;
+    content: "";
+  }
+
+  hr:after {
+    clear: both;
+  }
+
+
+  input {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+  }
+
+  input[disabled] {
+    cursor: default;
+  }
+
+  input {
+    line-height: normal;
+  }
+
+  input[type="checkbox"] {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.1;
+  }
+
+  h1 {
+    padding-bottom: 0.3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #ddd;
+  }
+
+  h2 {
+    padding-bottom: 0.3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #ddd;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+  }
+
+  h4 {
+    font-size: 1.25em;
+  }
+
+  h5 {
+    font-size: 1em;
+  }
+
+  h6 {
+    font-size: 1em;
+    color: #777;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0 15px;
+    color: #777;
+    border-left: 4px solid #ddd;
+  }
+
+  blockquote>:first-child {
+    margin-top: 0;
+  }
+
+  blockquote>:last-child {
+    margin-bottom: 0;
+  }
+
+  ul,
+  ol {
+    padding: 0;
+    padding-left: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: lower-roman;
+  }
+
+  ul ul ol,
+  ul ol ol,
+  ol ul ol,
+  ol ol ol {
+    list-style-type: lower-alpha;
+  }
+
+  li>p {
+    margin-top: 16px;
+  }
+
+  dd {
+    margin-left: 0;
+  }
+
+  dl {
+    padding: 0;
+  }
+
+  dl dt {
+    padding: 0;
+    margin-top: 16px;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  dl dd {
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+
+  p,
+  blockquote,
+  ul,
+  ol,
+  dl,
+  table,
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+  }
+
+  table th {
+    font-weight: bold;
+    background color-paleblue
+  }
+
+  table th,
+  table td {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+  }
+
+  table tr {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+  }
+
+  table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+  }
+
+  *:first-child {
+    margin-top: 0 !important;
+  }
+
+  *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  kbd {
+    background-color: #e7e7e7;
+    background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+    background-image: linear-gradient(#fefefe, #e7e7e7);
+    background-repeat: repeat-x;
+    border-radius: 2px;
+    border: 1px solid #cfcfcf;
+    color: #000;
+    padding: 3px 5px;
+    line-height: 10px;
+    font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    display: inline-block;
+  }

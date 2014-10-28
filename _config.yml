@@ -1,0 +1,14 @@
+menu:
+  home: [Home, /]
+  articles: [Articles, /articles]
+  books: [Books, /books]
+  projects: [Projects, /projects]
+  slides: [Slides, /slides]
+
+social:
+  weibo: [Weibo, http://weibo.com/myst729]
+  github: [GitHub, https://github.com/myst729]
+
+avatar_image: '/images/myst729.jpg'
+cover_image: '/images/background.jpg'
+time_format: 'YYYY-MM-DD, dddd'

@@ -1,0 +1,21 @@
+    <% if (is_post() && config.disqus_shortname) { %>
+      <script>
+        var disqus_shortname = '<%= config.disqus_shortname %>';
+        <% if (page.permalink) { %>
+          var disqus_url = '<%= page.permalink %>';
+        <% } %>
+        (function() {
+          var dsq = document.createElement('script');
+          dsq.type = 'text/javascript';
+          dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/<%- page.comments ? "embed.js" : "count.js" %>';
+          document.body.appendChild(dsq);
+        })();
+      </script>
+    <% } %>
+
+    <% if (!is_home()) { %>
+      <script src="/js/script.js"></script>
+    <% } %>
+  </body>
+</html>

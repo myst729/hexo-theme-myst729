@@ -1,0 +1,16 @@
+<%- partial('_partial/head') %>
+
+<% if (is_home()) { %>
+  <%- body %>
+<% } else { %>
+  <%- partial('_partial/menu') %>
+  <div id="overlay"></div>
+  <section id="main">
+    <%- partial('_partial/banner') %>
+    <section id="content">
+      <%- body %>
+    </section>
+  </section>
+<% } %>
+
+<%- partial('_partial/foot') %>

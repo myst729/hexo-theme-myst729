@@ -1,0 +1,22 @@
+<div id="responsive">
+  <ul class="social">
+    <% for (var i in theme.social) { %>
+      <li><a href="<%- theme.social[i][1] %>" target="_blank"><i class="fontello icon-<%- i %>"></i></a></li>
+    <% } %>
+  </ul>
+  <button id="toggle-responsive"><i class="fontello icon-menu"></i></button>
+</div>
+
+<aside id="menu">
+  <ul class="pages">
+    <% for (var i in theme.menu) { %>
+      <li><a href="<%- theme.menu[i][1] %>"><i class="fontello icon-<%- i %>"></i><span><%= theme.menu[i][0] %></span></a></li>
+    <% } %>
+  </ul>
+  <h3>Find Me</h3>
+  <ul class="social">
+    <% for (var i in theme.social) { %>
+      <li><a href="<%- theme.social[i][1] %>" target="_blank"><i class="fontello icon-<%- i %>"></i><span><%= theme.social[i][0] %></span></a></li>
+    <% } %>
+  </ul>
+</aside>

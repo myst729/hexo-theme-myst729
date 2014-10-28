@@ -1,0 +1,26 @@
+<% page.family = 'homepage'; %>
+<section id="homepage">
+  <div>
+    <img id="avatar" class="homepage" src="<%- theme.avatar_image %>" alt="Leo Deng">
+    <span><%- config.description %></span>
+    <header>
+      <h1><%- config.title %></h1>
+      <h2><%- config.subtitle %></h2>
+    </header>
+    <nav>
+      <ul class="pages">
+        <% for (var i in theme.menu) { %>
+          <% if (i !== 'home') { %>
+            <li><a href="<%- theme.menu[i][1] %>"><i class="fontello icon-<%- i %>"></i><%= theme.menu[i][0] %></a></li>
+          <% } %>
+        <% } %>
+      </ul>
+      <ul class="social">
+        <% for (var i in theme.social) { %>
+          <li><a href="<%- theme.social[i][1] %>" target="_blank"><i class="fontello icon-<%- i %>"></i></a></li>
+        <% } %>
+      </ul>
+    </nav>
+  </div>
+</section>
+<div id="overlay" class="homepage"></div>

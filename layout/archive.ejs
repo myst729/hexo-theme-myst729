@@ -1,0 +1,5 @@
+<% page.family = 'articles'; page.title = 'Articles' %>
+<% page.posts.each(function(post) { %>
+  <%- partial('_partial/excerpt', {page: post}) %>
+<% }) %>
+<%- partial('_partial/pagination') %>

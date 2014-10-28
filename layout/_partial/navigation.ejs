@@ -1,0 +1,8 @@
+<nav id="navigation">
+  <% if (page.prev) { %>
+    <p class="prev"><a href="<%- url_for(page.prev.path) %>"><%- page.prev.title %> <i class="fontello icon-prev"></i> <strong>Older</strong></a></p>
+  <% } %>
+  <% if (page.next) { %>
+    <p class="next"><a href="<%- url_for(page.next.path) %>"><strong>Newer</strong> <i class="fontello icon-next"></i> <%- page.next.title %></a></p>
+  <% } %>
+</nav>
