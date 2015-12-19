@@ -4,6 +4,7 @@ menu:
   books: [Books, /books]
   projects: [Projects, /projects]
   slides: [Slides, /slides]
+  music: [Music, /music]
 
 social:
   weibo: [Weibo, http://weibo.com/myst729]
