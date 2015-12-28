@@ -11,6 +11,6 @@ social:
   github: [GitHub, https://github.com/myst729]
   stackoverflow: [StackOverflow, https://stackoverflow.com/users/1032492]
 
-avatar_image: '/images/myst729.jpg'
-cover_image: '/images/background.jpg'
+avatar_image: '/images/me.jpg'
+cover_image: '/images/nebula.jpg'
 time_format: 'YYYY-MM-DD, dddd'
