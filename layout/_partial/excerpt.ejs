@@ -1,5 +1,5 @@
 <article>
-  <h1 class="title" data-time="<%- page.date.format(theme.time_format) %>"><a href="<%- url_for(page.path) %>"><%- page.title %></a></h1>
+  <h1 class="title" data-time="<%- page.date.format(theme.date_format) %>"><a href="<%- url_for(page.path) %>"><%- page.title %></a></h1>
   <% if(page.excerpt) { %>
     <%- page.excerpt %>
     <p><a class="readmore" href="<%- url_for(page.path) %>"><i class="fontello icon-more"></i> Read More</a></p>

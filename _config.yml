@@ -13,4 +13,4 @@ social:
 
 avatar_image: '/images/me.jpg'
 cover_image: '/images/nebula.jpg'
-time_format: 'YYYY-MM-DD, dddd'
+date_format: 'YYYY-MM-DD, dddd'

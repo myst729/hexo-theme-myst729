@@ -1,6 +1,6 @@
 <article>
   <% if (!page.notitle) { %>
-    <h1 class="title" data-time="<%- page.date.format(theme.time_format) %>"><%- page.title %></h1>
+    <h1 class="title" data-time="<%- page.date.format(theme.date_format) %>"><%- page.title %></h1>
   <% } %>
   <%- page.content %>
   <p class="eof"><i class="fontello icon-asterisk"></i></p>
