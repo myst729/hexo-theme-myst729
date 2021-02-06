@@ -1,5 +1,5 @@
 /* jshint asi:true */
-'use stricy'
+'use strict'
 
 void function(window, document, undefined) {
   var body = document.body
